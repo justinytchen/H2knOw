@@ -1,3 +1,10 @@
-.title{
-	text-align: center
-}
+select
+		{width: 14em;
+    	margin: 0 1em;
+    	text-indent: 1em;
+    	line-height: 2em;}
+
+select *    {width: 14em;
+    	padding: 0 1em;
+    	text-indent: 0;
+    	line-height: 2em;}
