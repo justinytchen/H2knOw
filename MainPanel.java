@@ -1,4 +1,5 @@
 
-public class MainPanel {
+public class MainPanel extends JPanel implements 
+{
 
 }
