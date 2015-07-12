@@ -1,10 +1,25 @@
-select
-		{width: 14em;
+select{width: 14em;
     	margin: 0 1em;
     	text-indent: 1em;
     	line-height: 2em;}
 
-select *    {width: 14em;
+select * {width: 14em;
     	padding: 0 1em;
     	text-indent: 0;
     	line-height: 2em;}
+.age{
+	font-size:24;
+	font-family:"Helvetica";
+	font-weight:Bold;
+	color: #009999;
+}
+
+div{
+	text-align: center;
+}
+
+body{
+    background-image: url("http://www.islamforchristians.com/wp-content/uploads/2015/03/Water.jpg");
+    background-size: 1440px 900px;
+    background-repeat: no-repeat;
+}
