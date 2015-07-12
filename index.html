@@ -3,10 +3,12 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<script src="script.js" type="text/javascript"></script>
+	<h1><strong></strong></h1>
 </head>
 	<body>
-		<div class = "age">
-			Age: 
+		<div class = "section2">
+			<div class = "age">
+				Age: 
 				<select id="age">
 				    <option value="1">18-24</option>
 				    <option value="2">25-30</option>
@@ -15,76 +17,82 @@
 				    <option value="5">43-48</option>
 				    <option value="6">49-54</option>
 				    <option value="7">55+</option>
-			</select><br>
+				</select><br>
+			</div>
+
+			<div class = "height">
+				<div class = "H">H</div><div class = "eight">eight: </div> <div class = "ft">ft.</div> 
+				<select class = "ftlist" id="heightft"> 
+				    <option value="4">4</option>
+				    <option value="5">5</option>
+				    <option value="6">6</option>
+				    <option value="7">7</option>
+				</select>
+				<div class = "in">in.</div>  
+				<select class = "inlist" id="heightin">
+				    <option value="0">0</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
+				    <option value="5">5</option>
+				    <option value="6">6</option>
+				    <option value="7">7</option>
+				    <option value="8">8</option>
+				    <option value="9">9</option>
+				    <option value="10">10</option>
+				    <option value="11">11</option>
+				</select> <br>
+			</div>
+
+
+			<div class = "sweat">
+				Sweat: How sweaty <br>are you?
+				<select id="sweat">
+				    <option value="1">0 (Dry)</option>
+				    <option value="2">1</option>
+				    <option value="3">2</option>
+				    <option value="4">3</option>
+				    <option value="5">4</option>
+				    <option value="6">5</option>
+				    <option value="7">6 (Drenched)</option>
+				</select> <br>
+			</div>
+
+			<div class = "energy">
+				Activity: How energetic<br>are you? 
+				<select id="energy">
+				    <option value="1">0 (Stagnant)</option>
+				    <option value="2">1</option>
+				    <option value="3">2</option>
+				    <option value="4">3</option>
+				    <option value="5">4</option>
+				    <option value="6">5</option>
+				    <option value="7">6 (Hyper)</option>
+				</select> <br>
+			</div>
+
+			<div class = "weight">
+				Weight 
+				<div class="units">
+					(lb): 
+				</div>
+				<select class="weightlist" id="weight">
+				    <option value="1">100-119</option>
+				    <option value="2">120-139</option>
+				    <option value="3">140-159</option>
+				    <option value="4">160-179</option>
+				    <option value="5">180-199</option>
+				    <option value="6">200-219</option>
+				    <option value="7">220+</option>
+				</select><br>
+			</div>
+			<div class = "button">
+				<button onclick="onClick()" style="color: #333399; font: bold 30px Helvetica; height: 75px; width: 700px; background-color:FF9966;">Calculate</button><br>
+		    	<p id="water"> </p> 
+		    </div>
+		    <div class = "value">
+		    </div>
 		</div>
-
-		<div class = "height">
-			Height:                        Feet: 
-			<select id="heightft">
-			    <option value="4">4</option>
-			    <option value="5">5</option>
-			    <option value="6">6</option>
-			    <option value="7">7</option>
-			</select>
-			Inches: 
-			<select id="heightin">
-			    <option value="0">0</option>
-			    <option value="1">1</option>
-			    <option value="2">2</option>
-			    <option value="3">3</option>
-			    <option value="4">4</option>
-			    <option value="5">5</option>
-			    <option value="6">6</option>
-			    <option value="7">7</option>
-			    <option value="8">8</option>
-			    <option value="9">9</option>
-			    <option value="10">10</option>
-			    <option value="11">11</option>
-			</select> <br>
-		</div>
-
-
-		<div class = "sweat">
-			Sweat (How sweaty are you, scale of 0 (dry) to 6 (drenched)): 
-			<select id="sweat">
-			    <option value="1">0</option>
-			    <option value="2">1</option>
-			    <option value="3">2</option>
-			    <option value="4">3</option>
-			    <option value="5">4</option>
-			    <option value="6">5</option>
-			    <option value="7">6</option>
-			</select> <br>
-		</div>
-
-		<div class = "energy">
-			Activity (How energetic are you, scale of 0 (stagnant) to 6 (psycho)): 
-			<select id="energy">
-			    <option value="1">0</option>
-			    <option value="2">1</option>
-			    <option value="3">2</option>
-			    <option value="4">3</option>
-			    <option value="5">4</option>
-			    <option value="6">5</option>
-			    <option value="7">6</option>
-			</select> <br>
-		</div>
-
-		<div class = "weight">
-			Weight (lb): 
-			<select id="weight">
-			    <option value="1">100-119</option>
-			    <option value="2">120-139</option>
-			    <option value="3">140-159</option>
-			    <option value="4">160-179</option>
-			    <option value="5">180-199</option>
-			    <option value="6">200-219</option>
-			    <option value="7">220+</option>
-			</select><br>
-		</div>
-
-		<button onclick="onClick()">Calculate</button><br>
-		<strong>Value: </strong>
-		<p id="water"> </p>
 	</body>
 </html>

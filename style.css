@@ -8,11 +8,15 @@ select * {width: 14em;
     	padding: 0 1em;
     	text-indent: 0;
     	line-height: 2em;}
-body{
-	font-size:24;
+div{
+    height:800;
+    width:1440;
+	font-size:50;
 	font-family:"Helvetica";
 	font-weight:Bold;
 	color: #7ACC7A;
+    position: relative;
+    top: 40px;
 }
 
 div{
@@ -21,7 +25,163 @@ div{
   margin-right: auto ;
 }
 
+.age{
+  font-size:190;
+  position: relative;
+    left: -100px;
+    top: 0px;
+}
+
+.age select{
+  position: relative;
+    left: -220px;
+    top: 30px;
+
+}
+
+.weight{
+  width: 500;
+  font-size:130;
+  position: relative;
+    left: 350px;
+    top: -720px;
+}
+
+.height{
+    font-size:80;
+    position: relative;
+    left: 800px;
+    top: 80px;
+}
+
+.button{
+    width:900;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sweat{
+    position: relative;
+    left: -190px;
+    top: -1340px;
+
+}
+
+.energy{
+    position: relative;
+    left: -90px;
+    top: -1980px;
+}
+
+.units{
+   font-size:30;
+    position: relative;
+    left: 10px;
+    top: -20px;
+}
+
+.height{
+    position: relative;
+    left: 500px;
+    top: -100px;
+
+}
+
+.weight{
+    position: relative;
+    left: 420px;
+    top: -2900px;
+
+}
+
+.weightlist{
+    position: relative;
+    left: 60px;
+    top: -810px;
+
+}
+
+.button{
+    position: relative;
+    width:700;
+    font-size: 26;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    top: -3400px;
+}
+
+.result{
+    position: relative;
+    left: 0px;
+    top: -1000px;
+}
+
+.energy select{
+    position: relative;
+    top: -15px;
+}
+
+.H{
+    position: relative;
+    top: -730px;
+    font-size: 300;
+}
+
+.eight{
+    position: relative;
+    top: -1475px;
+    left: 200;
+    font-size: 90;
+
+}
+
+.sweat select{
+    position: relative;
+    top: -10px;
+}
+
+.ft{
+    position: relative;
+    top: -2160px;
+    left: 375;
+    font-size:50;
+
+}
+
+.in{
+    position: relative;
+    top: -2920px;
+    left: 375px;
+    font-size:50;
+
+}
+
+.inlist{
+    position: relative;
+    top: -3760px;
+    left: 200px;
+
+}
+
+.ftlist{
+    position: relative;
+    top: -2950px;
+    left: 200px;
+
+}
+
+html { 
+  
+  overflow-y:hidden;   
+  overflow-x:hidden; 
+    width:100%;
+    height:100%;
+}
+
 body{
+    width: 1440px;
+    height: 900px;
     background-image: url("http://img13.deviantart.net/799d/i/2011/093/b/c/soft_blue_gradient_by_davidm147-d3d5p44.jpg");
     background-size: 1440px 900px;
     background-repeat: no-repeat;

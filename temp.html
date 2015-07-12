@@ -17,93 +17,400 @@
 <p class="p1">&lt;head&gt;</p>
 <p class="p1"><span class="Apple-tab-span">	</span>&lt;script src="http://code.jquery.com/jquery-1.11.3.min.js"&gt;&lt;/script&gt;</p>
 <p class="p1"><span class="Apple-tab-span">	</span>&lt;link href="style.css" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;script src="script.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;h1&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/h1&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
 <p class="p1"><span class="Apple-tab-span">	</span>&lt;body&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;h2 onclick="expandit('age');"&gt;Age:&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div id="age"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="1"&gt;18-24&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="2"&gt;25-30&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="3"&gt;31-36&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="4"&gt;37-42&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="5"&gt;43-48&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="6"&gt;49-54&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="7"&gt;55+&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "height"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Height:<span class="Apple-converted-space">                     </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div id="heightft"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;h2 onclick="expandit('heightft');"&gt;Feet:&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="4"&gt;4&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="5"&gt;5&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="6"&gt;6&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="7"&gt;7&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "section2"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "age"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Age:<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;select id="age"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="1"&gt;18-24&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="2"&gt;25-30&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="3"&gt;31-36&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="4"&gt;37-42&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="5"&gt;43-48&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="6"&gt;49-54&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="7"&gt;55+&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/select&gt;&lt;br&gt;</p>
 <p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div id="heightin"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;h2 onclick="expandit('heightin');"&gt;Inches:&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="0"&gt;0&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="1"&gt;1&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="2"&gt;2&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="3"&gt;3&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="4"&gt;4&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="5"&gt;5&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="6"&gt;6&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="7"&gt;7&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="8"&gt;8&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="9"&gt;9&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="10"&gt;10&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="11"&gt;11&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt; &lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "height"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "H"&gt;H&lt;/div&gt;&lt;div class = "eight"&gt;eight: &lt;/div&gt; &lt;div class = "ft"&gt;ft.&lt;/div&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;select class = "ftlist" id="heightft"&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="4"&gt;4&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="5"&gt;5&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="6"&gt;6&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="7"&gt;7&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "in"&gt;in.&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;select class = "inlist" id="heightin"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="0"&gt;0&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="1"&gt;1&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="2"&gt;2&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="3"&gt;3&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="4"&gt;4&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="5"&gt;5&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="6"&gt;6&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="7"&gt;7&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="8"&gt;8&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="9"&gt;9&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="10"&gt;10&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="11"&gt;11&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/select&gt; &lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "sweat"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Sweat: How sweaty &lt;br&gt;are you?</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;select id="sweat"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="1"&gt;0 (Dry)&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="2"&gt;1&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="3"&gt;2&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="4"&gt;3&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="5"&gt;4&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="6"&gt;5&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="7"&gt;6 (Drenched)&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/select&gt; &lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "energy"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Activity: How energetic&lt;br&gt;are you?<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;select id="energy"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="1"&gt;0 (Stagnant)&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="2"&gt;1&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="3"&gt;2&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="4"&gt;3&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="5"&gt;4&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="6"&gt;5&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="7"&gt;6 (Hyper)&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/select&gt; &lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "weight"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Weight<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class="units"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(lb):<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;select class="weightlist" id="weight"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="1"&gt;100-119&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="2"&gt;120-139&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="3"&gt;140-159&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="4"&gt;160-179&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="5"&gt;180-199&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="6"&gt;200-219&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;option value="7"&gt;220+&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/select&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "button"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;button onclick="onClick()" style="color: #333399; font: bold 30px Helvetica; height: 75px; width: 700px; background-color:FF9966;"&gt;Calculate&lt;/button&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>&lt;p id="water"&gt; &lt;/p&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div class = "value"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
 <p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "sweat"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Sweat (How sweaty are you, scale of 0 (dry) to 6 (drenched)):<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div id="sweat"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="1"&gt;0&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="2"&gt;1&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="3"&gt;2&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="4"&gt;3&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="5"&gt;4&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="6"&gt;5&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="7"&gt;6&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt; &lt;br&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "energy"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Activity (How energetic are you, scale of 0 (stagnant) to 6 (psycho)):<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div id="energy"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="1"&gt;0&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="2"&gt;1&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="3"&gt;2&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="4"&gt;3&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="5"&gt;4&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="6"&gt;5&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="7"&gt;6&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt; &lt;br&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class = "weight"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Weight (lb):<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div id="weight"&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="1"&gt;100-119&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="2"&gt;120-139&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="3"&gt;140-159&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="4"&gt;160-179&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="5"&gt;180-199&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="6"&gt;200-219&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>&lt;div value="7"&gt;220+&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;button onclick="onClick()"&gt;Calculate&lt;/button&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;strong&gt;Value: &lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;p id="water"&gt; &lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;script src="//code.jquery.com/jquery-1.11.3.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;</p>
 <p class="p1"><span class="Apple-tab-span">	</span>&lt;/body&gt;</p>
 <p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">var age =0;</p>
+<p class="p1">var height =0;</p>
+<p class="p1">var weight=0;</p>
+<p class="p1">var color=0;</p>
+<p class="p1">var sweat=0;</p>
+<p class="p1">var evaporation=0;</p>
+<p class="p1">var mass;</p>
+<p class="p1">var humidity;</p>
+<p class="p1">var temperature;</p>
+<p class="p1">var time = 30;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">function onClick(){</p>
+<p class="p1"><span class="Apple-tab-span">	</span>sweatlevel=0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>sweat=1;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>age =0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height =0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>weight=0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color=0;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>var e = document.getElementById("heightft");</p>
+<p class="p1"><span class="Apple-tab-span">	</span>var feet = e.options[e.selectedIndex].value;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height+=feet*12;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>e = document.getElementById("heightin");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var inc = e.options[e.selectedIndex].value;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height+=parseInt(inc)*2.54;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>e = document.getElementById("weight");</p>
+<p class="p1"><span class="Apple-tab-span">	</span>weight = e.options[e.selectedIndex].value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>e = document.getElementById("sweat");</p>
+<p class="p1"><span class="Apple-tab-span">	</span>sweatlevel = e.options[e.selectedIndex].value;</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>e = document.getElementById("age");</p>
+<p class="p1"><span class="Apple-tab-span">	</span>age = e.options[e.selectedIndex].value;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>e = document.getElementById("age");</p>
+<p class="p1"><span class="Apple-tab-span">	</span>var sweatbase = e.options[e.selectedIndex].value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>var factor = 1;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>switch(parseInt(sweatlevel)){</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 1: sweat*=13.333333333;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 2: sweat*=15;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 3: sweat*=16.6666666666;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 4: sweat*=18.3333333333;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 5: sweat*=20;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 6: sweat*=21.666666666;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 7: sweat*=23.333333333;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>switch(parseInt(sweatlevel)){</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 1: sweat*=0.8;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 2: sweat*=0.9;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 3: sweat*=1;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 4: sweat*=1.1;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 5: sweat*=1.2;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 6: sweat*=1.3;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 7: sweat*=1.4;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>switch(parseInt(age)){</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 1: sweat*=1.15;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 2: sweat*=1.1;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 3: sweat*=1.05;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 4: sweat*=1;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 5: sweat*=0.95;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 6: sweat*=0.9;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 7: sweat*=0.85;break;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}<span class="Apple-tab-span">	</span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>if(height&lt;=150)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=0.85;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>else if(height&lt;=168)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=0.9;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>else if(height&lt;=177)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=0.95;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>else if(height&lt;=186)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=1.0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>else if(height&lt;=195)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=1.05;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>else if(height&lt;=204)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=1.1;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>else</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=1.15;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>sweat+=1; //respiration rate per minute exercise</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>mass = (20*weight+90)*453.5920*0.6;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (typeof jQuery == 'undefined') { <span class="Apple-converted-space">       </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert("Jquery doesnt exist????????");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>jQuery.get( "http://api.wunderground.com/api/3325cf013e10768f/conditions/q/CA/San_Francisco.json", function( response ) {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>var s = document.getElementById("water");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var respiration = 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>humidity = parseInt(response.current_observation.relative_humidity.substring(0,2))*0.01;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>temperature = response.current_observation.temp_c +273; //Not fully accurate, will need more time and development</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>evaporation= 2.269*mass*temperature/2.42672/(60*24)*(1-humidity)*(1-humidity)*(1-humidity)*(1-humidity)*(1-humidity)*2; //this line is full of BS because its an approximation (vaporization constant)</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat+=evaporation;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sweat*=0.3;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>s.innerHTML = sweat + " mL of water lost every minute";<span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(notify(sweat), 100000);<span class="Apple-converted-space">     </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}); <span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function notify(sweat){</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>alert("Hello, please drink " + sweat*30 +<span class="Apple-converted-space">  </span>" mL of water to stay hydrated in order OutsideLands Music Festival to its fullest extent.\n (Notification will be pushed every 1/2 hour.)")<span class="Apple-converted-space">    </span>;<span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">select{width: 14em;</p>
+<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>margin: 0 1em;</p>
+<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>text-indent: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>line-height: 2em;}</p>
+<p class="p2"><br></p>
+<p class="p1">select * {width: 14em;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>padding: 0 1em;</p>
+<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>text-indent: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>line-height: 2em;}</p>
+<p class="p1">div{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:1440;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size:50;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-family:"Helvetica";</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-weight:Bold;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>color: #7ACC7A;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 40px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">div{</p>
+<p class="p1"><span class="Apple-tab-span">	</span> width: 900px ;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-left: auto ;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-right: auto ;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.age{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:190;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: -100px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.age select{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: -220px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 30px;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.weight{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 500;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:130;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 350px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -720px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.height{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:80;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 80px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.button{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:900;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-right: auto;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.sweat{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: -190px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -1340px;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.energy{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: -90px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -1980px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.units{</p>
+<p class="p1"><span class="Apple-converted-space">   </span>font-size:30;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.height{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -100px;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.weight{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 420px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -800px;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.weightlist{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -45px;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.button{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 26;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left:auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-right:auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -740px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.result{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -225px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.energy select{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -15px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.H{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -730px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 300;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.eight{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -1475px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 200;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 90;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.sweat select{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -810px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.ft{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -475px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 375;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:50;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.in{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -475px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 375;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:50;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.inlist{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -570px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 200;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.ftlist{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: -520px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 200;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-image: url("http://img13.deviantart.net/799d/i/2011/093/b/c/soft_blue_gradient_by_davidm147-d3d5p44.jpg");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-size: 1440px 900px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-repeat: no-repeat;</p>
+<p class="p1">}</p>
 </body>
 </html>

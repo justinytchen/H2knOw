@@ -89,10 +89,8 @@ function onClick(){
 	else
 		sweat*=1.15;
 	sweat+=1; //respiration rate per minute exercise
-	alert(sweat); 11.42
 
 	mass = (20*weight+90)*453.5920*0.6;
-	alert(mass)
     if (typeof jQuery == 'undefined') {        
             alert("Jquery doesnt exist????????");
         }
@@ -100,16 +98,17 @@ function onClick(){
         var s = document.getElementById("water");
         var respiration = 1;
         humidity = parseInt(response.current_observation.relative_humidity.substring(0,2))*0.01;
-        temperature = response.current_observation.temp_c +273;
+        temperature = response.current_observation.temp_c +273; //Not fully accurate, will need more time and development
 
-		evaporation= 2.269*mass*temperature/2.42672/(60*24)*(1-humidity)*(1-humidity)*(1-humidity)*2; //this line is full of BS because its an approximation (vaporization constant)
+		evaporation= 2.269*mass*temperature/2.42672/(60*24)*(1-humidity)*(1-humidity)*(1-humidity)*(1-humidity)*(1-humidity); //this line is full of BS because its an approximation (vaporization constant)
 		sweat+=evaporation;
 		sweat*=0.3;
-		alert(sweat);
 
-        s.innerHTML = response.current_observation.relative_humidity;        
+        s.innerHTML = sweat + " mL of water lost every minute";   
+        setTimeout(notify(sweat), 100000);     
     });  
 
-
-//	setInterval(function () {alert("Hello, please drink " + " mL of water to stay hydrated in order OutsideLands Music Festival to its fullest extent.")}, time);
+    function notify(sweat){
+		alert("Hello, please drink " + sweat*30 +  " mL of water to stay hydrated in order OutsideLands Music Festival to its fullest extent.\n (Notification will be pushed every 1/2 hour.)")    ;	
+    }
 }
