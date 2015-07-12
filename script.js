@@ -4,6 +4,9 @@ var height =0;
 var weight=0;
 var color=0;
 var sweat=0;
+var evaporation=0;
+var mass;
+var humidity;
 
 function onClick(){
 	sweatlevel=0;
@@ -22,22 +25,23 @@ function onClick(){
 	height+=parseInt(inc)*2.54;
 
 	e = document.getElementById("weight");
-	weight = ++e.options[e.selectedIndex].value;
+	weight = e.options[e.selectedIndex].value;
 
 	e = document.getElementById("sweat");
-	sweatlevel = ++e.options[e.selectedIndex].value;
+	sweatlevel = e.options[e.selectedIndex].value;
 	
 	e = document.getElementById("age");
-	age = ++e.options[e.selectedIndex].value;
+	age = e.options[e.selectedIndex].value;
+
 
 	e = document.getElementById("age");
-	var sweatbase = ++e.options[e.selectedIndex].value;
+	var sweatbase = e.options[e.selectedIndex].value;
 
 	var factor = 1;
 
-//	alert("age" + age  + " weight"  + weight +  " sweat" + sweatlevel);	
 
-	switch(sweatlevel){
+
+	switch(parseInt(sweatlevel)){
 		case 1: sweat*=13.333333333;break;
 		case 2: sweat*=15;break;
 		case 3: sweat*=16.6666666666;break;
@@ -46,9 +50,9 @@ function onClick(){
 		case 6: sweat*=21.666666666;break;
 		case 7: sweat*=23.333333333;break;
 	}
+	alert(sweat);
 
-
-	switch(sweatlevel){
+	switch(parseInt(sweatlevel)){
 		case 1: sweat*=0.8;break;
 		case 2: sweat*=0.9;break;
 		case 3: sweat*=1;break;
@@ -58,7 +62,7 @@ function onClick(){
 		case 7: sweat*=1.4;break;
 	}
 	
-	switch(age){
+	switch(parseInt(age)){
 		case 1: sweat*=1.15;break;
 		case 2: sweat*=1.1;break;
 		case 3: sweat*=1.05;break;
@@ -85,6 +89,8 @@ function onClick(){
 	sweat+=1;
 	alert(sweat);
 
+	mass = (20*weight+90)*453.592;
+	2270*mass/2.42672;
 
 
     if (typeof jQuery == 'undefined') {        
@@ -94,6 +100,6 @@ function onClick(){
         var s = document.getElementById("water");
         var respiration = 1;
         s.innerHTML = response.current_observation.observation_location.latitude;        
-    });
+    });  
 
 }

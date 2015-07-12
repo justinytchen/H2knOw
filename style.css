@@ -15,7 +15,9 @@ select * {width: 14em;
 }
 
 div{
-	text-align: center;
+	 width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 body{
