@@ -7,9 +7,33 @@ var sweat=0;
 var evaporation=0;
 var mass;
 var humidity;
-var temperature;
-var time = 30;
 
+function expandit(idname) {
+    var $divs = $("#"+idname);
+    if ($divs.is(":hidden"))
+    {
+        $divs.slideDown("slow");
+        if(idname == "dropdown")
+            $("#container").css("margin-top", 225);
+        $divs.find("input:first-of-type").focus();
+    }
+    else
+    {
+        if(idname == "dropdown")
+            $("#container").css("margin-top", 110);
+        $divs.slideUp("fast");
+    }
+}
+
+function closeit(idname) {
+    var $divs = $("#"+idname);
+    if (!$divs.is(":hidden"))
+    {
+        if(idname == "dropdown")
+            $("#container").css("margin-top", 110);
+        $divs.slideUp("fast");
+    }
+}
 
 function onClick(){
 	sweatlevel=0;
@@ -53,6 +77,7 @@ function onClick(){
 		case 6: sweat*=21.666666666;break;
 		case 7: sweat*=23.333333333;break;
 	}
+	alert(sweat);
 
 	switch(parseInt(sweatlevel)){
 		case 1: sweat*=0.8;break;
@@ -88,28 +113,25 @@ function onClick(){
 		sweat*=1.1;
 	else
 		sweat*=1.15;
-	sweat+=1; //respiration rate per minute exercise
-	alert(sweat); 11.42
+	sweat+=1;
+	sweat*=0.3;  //subject to change
+	alert(sweat);
 
-	mass = (20*weight+90)*453.5920*0.6;
-	alert(mass)
+	mass = (20*weight+90)*453.592;
+	2270*mass/2.42672;
+
+
     if (typeof jQuery == 'undefined') {        
             alert("Jquery doesnt exist????????");
         }
     jQuery.get( "http://api.wunderground.com/api/3325cf013e10768f/conditions/q/CA/San_Francisco.json", function( response ) { 
         var s = document.getElementById("water");
         var respiration = 1;
-        humidity = parseInt(response.current_observation.relative_humidity.substring(0,2))*0.01;
-        temperature = response.current_observation.temp_c +273;
-
-		evaporation= 2.269*mass*temperature/2.42672/(60*24)*(1-humidity)*(1-humidity)*(1-humidity)*2; //this line is full of BS because its an approximation (vaporization constant)
-		sweat+=evaporation;
-		sweat*=0.3;
-		alert(sweat);
-
-        s.innerHTML = response.current_observation.relative_humidity;        
+        s.innerHTML = response.current_observation.observation_location.latitude;        
     });  
 
-
-//	setInterval(function () {alert("Hello, please drink " + " mL of water to stay hydrated in order OutsideLands Music Festival to its fullest extent.")}, time);
 }
+
+$("#age").hide();
+$("#heightin").hide();
+$("#heightout").hide();
